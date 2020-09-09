@@ -12,8 +12,8 @@
 
 		$.ajax({
 			url: 'request.php',
-			type: 'PUT',
-			data: '{"nombre":"'+nombre+'"}',
+			type: 'POST',
+			data: '{"petition":"getUser"}',
 			
 			success: function(response){
 				console.log(response)
