@@ -7,13 +7,11 @@
 <body>
 
 	<script type="text/javascript">
-		
-		let nombre = 'Francis'
-
+	
 		$.ajax({
 			url: 'request.php',
 			type: 'POST',
-			data: '{"petition":"getUser"}',
+			data: '{"classMethod":"getUser", "id": 1}',
 			
 			success: function(response){
 				console.log(response)
