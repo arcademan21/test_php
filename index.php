@@ -8,13 +8,13 @@
 
 	<script type="text/javascript">
 		
+		let nombre = 'Francis'
+
 		$.ajax({
 			url: 'request.php',
-			type: 'POST',
-			data: {
-				nombre: 'Harold'
-			},
-
+			type: 'PUT',
+			data: '{"nombre":"'+nombre+'"}',
+			
 			success: function(response){
 				console.log(response)
 			}
